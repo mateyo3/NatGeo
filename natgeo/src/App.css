@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+body {
+  margin: 5px;
+}
+
+
+
+/* NAV BAR */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 10;
+  float: right;
+}
+
+
+li {
+  display: inline;
+  padding-left: 15px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav a:hover {
+  color: gray;
+  text-decoration: none;
+}
+
+#navbar-logo {
+  height: 40px;
+}
+
+
+
+
+/* BANNER */
+.banner {
+  background-color: #292C34;
+}
+
+.banner-image {
+  max-height: 125px;
+}
+
+
+/* ARTICLES */
+h1, h2 {
+  color: white;
+}
+
+.side-image {
+  width: 100%;
+  border-radius: .35em;
+}
+
+.center-image {
+  width: 100%;
+  border-radius: .35em;
+}
+
+
+.md-col-4 {
+  padding: 1em;
+  text-align: center;
+  background: #f7f7f7;
+  border-radius: .35em;
+  margin: 0 .5em .8em;
+}
+
+
+
+/* FOOTER */
+.main-footer {
+  background: #292C34;
+  color: #fff;
+  padding: 2em 0;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: .35em;
+}
