@@ -15,7 +15,7 @@ const NavBar = () => {
 	return (
 		<nav className="navbar navbar-default">
 	    	<NavLogo />
-	    	<NavLink />
+	    	<NavLinks />
 	    </nav>
 	);
 }
@@ -24,8 +24,6 @@ const NavLogo = () => {
 	return (
 			<NavLogoLink 
 				href={"#"}
-				className={"image-responsive"} 
-				id={"navbar-logo"}
 				src={"http://www.beardeddragonlady.com/uploads/1/3/5/3/13536865/editor/national-geographic-logo.png?1500583448"}
 			/>
 	);
@@ -35,62 +33,63 @@ const NavLogoLink = (props) => {
 	return (
 		<div className="navbar-header">
 			<a href={props.href}>
-				<img
-					className={props.className}
-					id={props.id}
-					src={props.src}
-				/>
+				<img className="image-responsive" id="navbar-logo" src={props.src} />
 			</a>
 		</div>
 	);
 }
 
-const NavLink = () => {
+const NavLinks = () => {
 	return (
       <div id="menu-standard" className="nav">
         <ul>
-        	<NavLinkOne />
-			<NavLinkTwo />
-			<NavLinkThree />
+        	<NavLink 
+        		href={"#"}
+        		linkName={"Shop"}
+        	/>
+			<NavLink 
+        		href={"#"}
+        		linkName={"Subscribe"}
+			/>
+			<NavLink 
+        		href={"#"}
+        		linkName={"Sign-in"}
+			/>
         </ul>
       </div>
 	);
 }
 
-const NavLinkOne = (props) => {
+// COMPONENT FOR ALL LINKS
+const NavLink = (props) => {
 	return (
-			<li id="menu-item" className="shop main-nav text-uppercase font-weight-bold"><a href="#">Shop</a></li>
+		<li id="menu-item" className="shop main-nav text-uppercase font-weight-bold">
+			<a href={props.href}>{props.linkName}</a>
+		</li>
 	);
 }
 
-const NavLinkTwo = (props) => {
-	return (
-		<li id="menu-item" className="subscribe main-nav text-uppercase font-weight-bold"><a href="#">Subscribe</a></li>
-	);
-}
 
-const NavLinkThree = (props) => {
-	return (
-		<li id="menu-item" className="sign-in main-nav text-uppercase font-weight-bold"><a href="#">Sign-in</a></li>
-	);
-}
-
+// BANNER IMAGE SRC
 const Banner = () => {
 	return (
 		<div className="text-center banner jumbotron">
-			<BannerImage />
+			<BannerImage 
+				src={"http://pluspng.com/img-png/logo-national-geographic-png-logo-natgeo-png-1000.png"}
+			/>
 		</div>
 	);
 }
 
-const BannerImage = () => {
+const BannerImage = (props) => {
 	return (
 		<span>
-			<img className="banner-image" src="http://pluspng.com/img-png/logo-national-geographic-png-logo-natgeo-png-1000.png" />
+			<img className="banner-image" src={props.src} />
 		</span>
 	);
 }
 
+// HOLDS ALL ARTLCES ON PAGE
 const Articles = () => {
 	return (
 	  <div className="row">
@@ -143,6 +142,7 @@ const ArticleRight = () => {
 	);
 }
 
+// COMPONENT FOR ALL ARTICLES
 const Article = (props) => {
 	return (
         <div>
@@ -157,7 +157,7 @@ const Article = (props) => {
 const Footer = () => {
 	return (
 		<footer className="main-footer">
-			<span>&copy;2018 React Bootcamp</span>
+			<span>&copy;2018 React Bootcamp | Mateo</span>
 		</footer>
 	);
 }
