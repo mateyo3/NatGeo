@@ -34,7 +34,7 @@ const NavLogo = () => {
 const NavLogoLink = (props) => {
 	return (
 		<div className="navbar-header">
-			<a href={props.href}>
+			<a className="logo" href={props.href}>
 				<img className="image-responsive" id="navbar-logo" src={props.src} />
 			</a>
 		</div>
