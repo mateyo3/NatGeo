@@ -20,6 +20,7 @@ const NavBar = () => {
 	);
 }
 
+// COMPONENT FOR MAIN LOGO
 const NavLogo = () => {
 	return (
 			<NavLogoLink 
@@ -29,6 +30,7 @@ const NavLogo = () => {
 	);
 }
 
+// PULLS PROPERTIES FROM PARENT COMPONENT, NavLogo
 const NavLogoLink = (props) => {
 	return (
 		<div className="navbar-header">
@@ -60,7 +62,7 @@ const NavLinks = () => {
 	);
 }
 
-// COMPONENT FOR ALL LINKS
+// PULLS PROPERTIES FROM PARENT COMPONENT, NavLinks
 const NavLink = (props) => {
 	return (
 		<li id="menu-item" className="shop main-nav text-uppercase font-weight-bold">
@@ -81,6 +83,7 @@ const Banner = () => {
 	);
 }
 
+// PULLS PROPERTIES FROM PARENT COMPONENT, Banner
 const BannerImage = (props) => {
 	return (
 		<span>
@@ -89,7 +92,7 @@ const BannerImage = (props) => {
 	);
 }
 
-// HOLDS ALL ARTLCES ON PAGE
+// HOLDS ALL ARTLCE COMPONENTS
 const Articles = () => {
 	return (
 	  <div className="row">
@@ -142,7 +145,7 @@ const ArticleRight = () => {
 	);
 }
 
-// COMPONENT FOR ALL ARTICLES
+// PULLS PROPERTIES FROM PARENT COMPONENT, ArticleRight, ArticleCenter, ArticleLeft
 const Article = (props) => {
 	return (
         <div>
