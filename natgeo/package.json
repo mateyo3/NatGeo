@@ -2,7 +2,7 @@
   "name": "natgeo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mateyo3.github.io/NatGeo",
+  "homepage": "https://mateyo3.github.io/NatGeo/natgeo",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
